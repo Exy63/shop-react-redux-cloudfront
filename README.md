@@ -2,7 +2,7 @@
 
 ### Task #2
 
-- CloudFront URL (this one should work): https://d2qnt5ouks165.cloudfront.net/
+- CloudFront URL (this one should work): https://d1a8c6prq84uly.cloudfront.net/
 - S3-website URL (this one should give 403 Forbidden error): http://superstore-app.s3-website-eu-west-1.amazonaws.com/
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
