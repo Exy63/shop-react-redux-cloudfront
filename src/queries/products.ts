@@ -8,10 +8,13 @@ export function useAvailableProducts() {
   return useQuery<AvailableProduct[], AxiosError>(
     "available-products",
     async () => {
-      const res = await axios.get<AvailableProduct[]>(
-        `${API_PATHS.bff}/product/available`
-      );
-      return res.data;
+      const res = (await axios.get<AvailableProduct[]>(
+        `${API_PATHS.product}/products`
+      )) as any;
+      // `${API_PATHS.bff}/product/available`
+      // task 3 requirement says we should use "product" instead of "products" in URL, and also nothing about "available"
+
+      return res.data?.products;
     }
   );
 }
