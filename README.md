@@ -1,5 +1,26 @@
 # React-shop-cloudfront
 
+### Task #2
+
+Serverless-finch and serverless-single-page-app plugins are added and configured.
+The app can be built and deployed by running npm script command.
+
+How to check the task?
+
+1. Clone the project
+2. Change the branch to `task2` by running `git checkout task2`
+3. Install all the dependencies by running `npm install` (if something went wrong stop the process by `ctrl+c` and run the installation command again)
+4. Run `cloudfront:update:build:deploy` to create a build and add all the resources in AWS (make sure that you don't have bucket with 'superstore-app' name)
+
+Everything is ready!
+
+- If you want to change some things in code you are free to do it, but do not forget to run `npm run cloudfront:build:deploy` after it
+
+### Links for Task #2
+- CloudFront URL (this one should work): https://d33fy6chog9gs4.cloudfront.net/
+- S3-website URL (this one should give 403 Forbidden error): http://superstore-app.s3-website-eu-west-1.amazonaws.com/
+
+
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
 - [Vite](https://vitejs.dev/) as a project bundler
